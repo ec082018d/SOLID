@@ -1,0 +1,20 @@
+The dependency inversion principle tells us that we should always try to have dependencies on interfaces, not classes. 
+It is important to mention that dependency inversion and dependency injection are NOT the same thing.
+
+It is unfortunate that the dependency inversion principle is represented by the D in SOLID. 
+It is always the last principle explained, but it is the most important principle in SOLID. 
+Without the dependency inversion principle, most of the other SOLID principles are not possible. 
+If we go back and revisit all the previously explained principles we will realize that the usage of interfaces is one 
+of the most fundamental elements in each of the principles:
+
+Depending on an interface that follows the interface segregation principle allows us to isolate a layer from the 
+implementation details of another layer (SoC principle) and helps us to prevent violations of the single responsibility principle.
+
+Depending on an interface also allows us to replace an implementation with another (Liskov substitution principle).
+
+Depending on an interface enables us to write applications that are open for extension but close for modification (Open/close principle).
+
+
+Implementing the SOLID principles in a programming language that doesn’t support interfaces or in a programming paradigm that doesn’t support 
+polymorphism is very unnatural. For example, implementing the SOLID principles in JavaScript ES5 or even ES6 feels very unnatural. However, in 
+TypeScript, it feels as natural as it can be.
